@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tl.css" />
+    <!-- countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- end countdown -->
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <!-- aniate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section class="hero h-100 w-100 mx-auto text-center d-flex justify-content-center align-items-center p-3">
+      <main>
+        <h4>The wedding celebration</h4>
+        <h2>Semar</h2>
+        <p>&</p>
+        <h2>Putri</h2>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn" onclick="enableScroll()">lihat undangan</a>
+      </main>
+    </section>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-md sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">semaput</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">semaput</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">info</a>
+              <a class="nav-link" href="#story">story</a>
+              <a class="nav-link" href="#gallery">gallery</a>
+              <a class="nav-link" href="#rsvp">rsvp</a>
+              <a class="nav-link" href="#gift">gift</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
+          <div class="col-md-8 text-center">
+            <h2>Acara apernikahan</h2>
+            <h3>Akan diselenggarakan pada 1 januari 2024</h3>
+            <p>dengan segala hormat kami mengundang Bpk/Ibu/Saudara/I</p>
+          </div>
+        </div>
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row m-5" data-aos="fade-right" data-aos-duration="2500">
+              <div class="col-8 text-end">
+                <h3>kambing jantan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo, libero fugit ipsum veniam sequi!</p>
+                <h5>
+                  Anak dari <br />
+                  bapak jantan <br />
+                  & <br />
+                  Ibu betina
+                </h5>
+              </div>
+              <div class="col-4">
+                <img src="asset/photo/maxime-agnelli-bhD6TGRjnWc-unsplash (1).jpg" alt="" class="rounded-circle img-responsive" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row m-5" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="300">
+              <div class="col-4">
+                <img src="asset/photo/nandhu-kumar-jAMcUbsTvWE-unsplash (1) (1).jpg" alt="" class="rounded-circle img-responsive" />
+              </div>
+              <div class="col-8">
+                <h3>kambing Betina</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo, libero fugit ipsum veniam sequi!</p>
+                <h5>
+                  Anak dari br bapak jantan <br />
+                  & <br />
+                  Ibu betina
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+    <!-- info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-md-8 text-center">
+            <h2>Informasi Acara</h2>
+            <h3>lokasi <br />Jl. Nglegok, Nglegok, Kranding, Kec. Mojo, Kabupaten Kediri,</h3>
+            <a href="" class="btn btn">lihat map</a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-8 mb-3" data-aos="flip-left" data-aos-duration="1500">
+            <div class="card text-center">
+              <div class="card-header">ACARA AKAD</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col md-6">
+                    <i class="bi bi-clock-history d-block"></i>
+                    <span>07.45-selesai</span>
+                  </div>
+                  <div class="col md-6">
+                    <i class="bi bi-calendar d-block"></i>
+                    <span>07.45-selesai</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary"></div>
+            </div>
+          </div>
+          <div class="col-md-5 col-8" data-aos="flip-right" data-aos-duration="1500">
+            <div class="card text-center">
+              <div class="card-header">ACARA RESEPSI</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col md-6">
+                    <i class="bi bi-clock-history d-block"></i>
+                    <span>07.45-selesai</span>
+                  </div>
+                  <div class="col md-6">
+                    <i class="bi bi-calendar d-block"></i>
+                    <span>07.45-selesai</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info -->
+    <!-- story -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
+          <div class="col-md-8 text-center mt-2">
+            <h2>Awal Pertemuan Kita</h2>
+          </div>
+        </div>
+        <div class="section-heading wow fadeIn">
+          <div class="heading-separator"></div>
+        </div>
+        <div class="row">
+          <div class="history-wrapper">
+            <div class="title-wrap text-center one-of-two"></div>
+            <div class="timeline-box one-of-two" data-aos="fade-left" data-aos-duration="2500">
+              <img class="mb-1-6 rounded-circle" src="asset/TL/alexas_fotos-DmuqS6KTf6M-unsplash (1).jpg" alt="..." />
+              <div class="content">
+                <h3 class="h4 mb-2 mb-md-3">Start with small space</h3>
+                <p class="mb-0">
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                </p>
+              </div>
+              <div class="year">1995</div>
+            </div>
+            <div class="timeline-box one-of-two" data-aos="fade-right" data-aos-duration="2500">
+              <img class="mb-1-6 rounded-circle" src="asset/TL/maxime-agnelli-bhD6TGRjnWc-unsplash (1).jpg" alt="..." />
+              <div class="content">
+                <h3 class="h4 mb-2 mb-md-3">Increase employee by 6 members</h3>
+                <p class="mb-0">
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                </p>
+              </div>
+              <div class="year">2003</div>
+            </div>
+            <div class="timeline-box one-of-two" data-aos="fade-left" data-aos-duration="2500">
+              <img class="mb-1-6 rounded-circle" src="asset/TL/qamma-farm-M7E6gxb1SV4-unsplash (1).jpg" alt="..." />
+              <div class="content">
+                <h3 class="h4 mb-2 mb-md-3">We win the national awards</h3>
+                <p class="mb-0">
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                </p>
+              </div>
+              <div class="year">2018</div>
+            </div>
+            <div class="timeline-box one-of-two" data-aos="fade-right" data-aos-duration="2500">
+              <img class="mb-1-6 rounded-circle" src="asset/TL/qamma-farm-oi6awUmXCjg-unsplash (1).jpg" alt="..." />
+              <div class="content">
+                <h3 class="h4 mb-2 mb-md-3">Branches open in International</h3>
+                <p class="mb-0">
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                </p>
+              </div>
+              <div class="year">2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end timline -->
+    <!-- gallery -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
+          <div class="col-md-8 text-center mt-2">
+            <h2>galery kita</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-right" data-aos-duration="2500" alt="Boat on Calm Water" />
+
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="200" alt="Wintry Mountain Landscape" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="200" alt="Mountains in the Clouds" />
+
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="400" alt="Boat on Calm Water" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="1000 " alt="Waves at Sea" />
+
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="1000" alt="Yosemite National Park" />
+          </div>
+        </div>
+        <!--end Gallery -->
+      </div>
+    </section>
+
+    <!-- rsvp  -->
+    <section id="rsvp" class="rsvp">
+      <div class="container pb-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center mt-2">
+            <h2>RSVP</h2>
+            <p>isi untuk mengkonfirmasi kehadiran</p>
+          </div>
+        </div>
+        <form id="my-form" class="row gy-2 gx-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbyNRmpxwNAz7ZiLh0UzOLi8XMlh9tNrj1SKe3693i_4jDiSjkITbHkCAxNr5XhC98dg/exec">
+          <div class="col-auto">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" />
+          </div>
+          <div class="col-auto">
+            <label for="status" class="form-label">konfirmasi</label>
+            <select id="status" class="form-select" name="status">
+              <option>hadir</option>
+              <option>tidak hadir</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <label class="form-label" for="jumlah">jumlah tamu</label>
+            <select class="form-select" id="jumlah" name="jumlah">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <!-- submit -->
+          <div class="col-auto">
+            <button type="submit" class="btn btn rsvp-btn">kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- end rsvp -->
+    <!-- gift -->
+    <section id="gift" class="gift">
+      <div class="container mb-4">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center mt-2">
+            <h2>Gifts</h2>
+            <p>isi untuk tanda kasih</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <div class="card border-dark mb-3">
+              <div class="card-header">BCA</div>
+              <div class="card-body">
+                <p>16488236537</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <div class="card border-dark mb-3">
+              <div class="card-header">MANDIRI</div>
+              <div class="card-body">
+                <p>17352688633</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <div class="card-group ">
+              <div class="card border-dark">
+                <img src="asset/qr/qrcode_80752018_664ef9820c420e8b4e4d2337f33935a9.png" class="mx-auto" alt="..." >
+                <div class="card-body">
+                  <h5>GOJEK/OVO</h5>
+                  <p>scan untuk memberikn tanda kasih</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end gift -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <p>created by mywolki</p>
+          </div>
+          <div class="row justify-content-center">
+          <div class="col text-center">
+            <span>my social media</span>
+              <div class="icon">
+                <a href="https://www.instagram.com/liii_pai/" target="_blank"> <i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/buka.ripai" target="_blank"> <i class="bi bi-facebook"></i></a>
+                <a href=""> <i class="bi bi-telegram"></i></a>
+                
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- offcanva/overfllow -->
+    <script>
+      const hamburger = document.querySelector(".navbar-toggler");
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      hamburger.addEventListener("click", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+    <!-- animate.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- countdown -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 12, // required
+        day: 28, // required
+        hours: 6, // Default is 0 [0-23] integer
+        minutes: 30, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "second", plural: "seconds" },
+        },
+      });
+    </script>
+
+    <!-- sheet -->
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("arigato gozaimazz");
+          });
+        });
+      });
+    </script>
+
+    <!-- scrolling -->
+
+    <script>
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+      }
+      const rootElement = document.querySelector(":root");
+      rootElement.style.scrollBehavior = "auto";
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+      }
+
+      disableScroll();
+    </script>
+  </body>
+</html>
